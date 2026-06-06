@@ -40,8 +40,8 @@ const Index = () => {
       "@type": "Organization",
       name: "Reddyanaa",
       alternateName: ["Reddyanna", "Reddy Anna"],
-      url: "https://reddyannasite.live/",
-      logo: "https://reddyannasite.live/android-chrome-512x512.png",
+      url: "https://www.reddyannasite.live/",
+      logo: "https://www.reddyannasite.live/android-chrome-512x512.png",
       description: "Join Reddy Anna and experience online cricket betting, live casino games, Teen Patti, Aviator, and sports betting on a single platform. Get fast UPI deposits and withdrawals, competitive odds, live match markets, and a smooth mobile betting experience.",
       sameAs: ["https://wa.link/reddyanna_"],
       contactPoint: [{
@@ -69,10 +69,10 @@ const Index = () => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://reddyannasite.live/" },
-        { "@type": "ListItem", position: 2, name: "Cricket", item: "https://reddyannasite.live/#cricket" },
-        { "@type": "ListItem", position: 3, name: "Casino", item: "https://reddyannasite.live/#casino" },
-        { "@type": "ListItem", position: 4, name: "Live Betting", item: "https://reddyannasite.live/#live" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.reddyannasite.live/" },
+        { "@type": "ListItem", position: 2, name: "Cricket", item: "https://www.reddyannasite.live/#cricket" },
+        { "@type": "ListItem", position: 3, name: "Casino", item: "https://www.reddyannasite.live/#casino" },
+        { "@type": "ListItem", position: 4, name: "Live Betting", item: "https://www.reddyannasite.live/#live" },
       ],
     });
 

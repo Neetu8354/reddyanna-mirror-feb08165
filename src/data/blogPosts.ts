@@ -27,7 +27,7 @@ export type BlogBlock =
   | { type: "ol"; items: string[] }
   | { type: "quote"; text: string };
 
-const COVER_DEFAULT = "https://reddyannasite.live/android-chrome-512x512.png";
+const COVER_DEFAULT = "https://www.reddyannasite.live/android-chrome-512x512.png";
 
 export const BLOG_POSTS: BlogPost[] = [
   {
