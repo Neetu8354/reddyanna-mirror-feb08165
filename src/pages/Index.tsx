@@ -25,6 +25,14 @@ const Index = () => {
     setMeta("og:description", "Get your Reddy Anna Cricket Betting ID and enjoy online cricket betting, live casino games, Teen Patti, Aviator. Fast UPI payouts, 24/7 support. Join now!", "property");
     setMeta("og:type", "website", "property");
 
+    // Self-canonical for homepage
+    const existingCanonicals = document.querySelectorAll('link[rel="canonical"]');
+    existingCanonicals.forEach((el) => el.remove());
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    canonical.href = "https://www.reddyannasite.live/";
+    document.head.appendChild(canonical);
+
     // Inject structured data: Organization + FAQPage + BreadcrumbList
     const ldScripts: HTMLScriptElement[] = [];
     const addLd = (data: Record<string, unknown>) => {

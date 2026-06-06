@@ -31,13 +31,22 @@ const setLink = (rel: string, href: string) => {
   el.href = href;
 };
 
+const setCanonical = (href: string) => {
+  const existing = document.querySelectorAll(`link[rel="canonical"]`);
+  existing.forEach((el) => el.remove());
+  const el = document.createElement("link");
+  el.rel = "canonical";
+  el.href = href;
+  document.head.appendChild(el);
+};
+
 export const useSeo = ({ title, description, path, ogImage, jsonLd, keywords }: SeoOptions) => {
   useEffect(() => {
     const url = `${SITE_URL}${path}`;
     document.title = title;
     setMeta("description", description);
     if (keywords) setMeta("keywords", keywords);
-    setLink("canonical", url);
+    setCanonical(url);
 
     setMeta("og:title", title, "property");
     setMeta("og:description", description, "property");
