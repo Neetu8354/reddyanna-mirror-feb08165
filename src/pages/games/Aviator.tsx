@@ -40,7 +40,7 @@ const Aviator = () => (
       "Open the casino lobby → Crash Games → Aviator. Set your bet (minimum ₹10).",
       "Watch the plane take off — the multiplier rises every second. Tap Cash Out before it flies away.",
       "Win = stake × multiplier at cash-out. Withdraw instantly to UPI.",
-    ]},
+    ]}
     faqs={[
       { q: "Is Aviator a real game or a scam?", a: "Aviator is a real, provably fair crash game by Spribe, played by millions worldwide. Reddyanaa runs the official certified version with verifiable RNG." },
       { q: "What is the best Aviator strategy?", a: "Many players use double-bet: one bet auto-cashes at 1.5x for safe profit, the other rides for a higher multiplier. There's no guaranteed strategy — Aviator is a game of chance." },

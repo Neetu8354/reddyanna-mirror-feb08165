@@ -39,7 +39,7 @@ const Casino = () => (
       "Open the casino lobby and choose Live Casino, Slots, Crash or Indian Tables.",
       "Pick your table or game, set your stake and play live with real dealers in HD.",
       "Cash out winnings to UPI in under 10 minutes — straight to your bank.",
-    ]},
+    ]}
     faqs={[
       { q: "Is the live casino on Reddyanaa real?", a: "Yes. All live tables stream from licensed studios with real human dealers, real cards and real wheels — no animations." },
       { q: "Can I play Teen Patti and Andar Bahar live?", a: "Absolutely. Reddyanaa runs live Teen Patti Royal and Andar Bahar tables 24/7 with Hindi-speaking dealers and side bets." },

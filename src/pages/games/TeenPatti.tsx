@@ -40,7 +40,7 @@ const TeenPatti = () => (
       "Open the casino lobby, tap Live Casino → Teen Patti and pick a table by stake.",
       "Place your ante, get your 3 cards from the live dealer, and choose to bet, fold or play blind.",
       "Win the hand with the best 3-card combo and instantly withdraw winnings to UPI.",
-    ]},
+    ]}
     faqs={[
       { q: "Can I play Teen Patti for real money on Reddyanaa?", a: "Yes — Teen Patti Royal on reddyannasite.live is real money, with INR stakes from ₹10 up to ₹1,00,000 per hand." },
       { q: "Is online Teen Patti rigged?", a: "No. Reddyanaa uses live dealers with real cards on certified tables — every hand is dealt in front of you on HD video." },

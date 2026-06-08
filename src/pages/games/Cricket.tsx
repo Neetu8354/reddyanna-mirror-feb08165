@@ -45,7 +45,7 @@ const Cricket = () => (
       "Open the live cricket section, pick any IPL or international match and choose your market — match winner, runs, wickets, sessions or fancy.",
       "Place your bet at the live odds and track results in real time as the match unfolds.",
       "Withdraw your winnings instantly to UPI — most cashouts land in your bank in under 10 minutes.",
-    ]},
+    ]}
     faqs={[
       { q: "What is cricket betting?", a: "Cricket betting involves predicting outcomes related to cricket matches, tournaments, or specific events within a match. Popular markets include match winners, top batsmen, top bowlers, innings totals, and live in-play opportunities. Modern online platforms provide real-time updates and a wide range of cricket-related markets for enthusiasts." },
       { q: "What is Fancy Betting in cricket?", a: "Fancy Betting is one of the most popular cricket betting markets in India. Unlike traditional betting where users predict the match winner, Fancy Bets focus on specific in-game events, player performances, team milestones, and session outcomes. These markets include Batsman Runs, Partnership Betting, Powerplay Runs, Session Betting, Boundary Betting, Wickets in Powerplay, Team Total Runs, and Player Performance Markets." },
