@@ -13,7 +13,7 @@ const renderBlock = (b: BlogBlock, i: number) => {
     case "h3":
       return <h3 key={i} className="mt-6 text-xl font-bold text-foreground">{b.text}</h3>;
     case "p":
-      return <p key={i} className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">{b.text}</p>;
+      return <p key={i} className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg [&_a]:text-white [&_a]:underline [&_a]:hover:text-primary" dangerouslySetInnerHTML={{ __html: b.text }} />;
     case "ul":
       return (
         <ul key={i} className="mt-4 list-disc space-y-2 pl-6 text-base text-muted-foreground md:text-lg">

@@ -20,7 +20,7 @@ export type BlogPost = {
 };
 
 export type BlogBlock =
-  | { type: "p"; text: string }
+  | { type: "p"; text: string; link?: { url: string; title?: string } }
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
   | { type: "ul"; items: string[] }
@@ -942,10 +942,10 @@ export const BLOG_POSTS: BlogPost[] = [
     cover: blogCasinoGamesImg,
     coverAlt: "Best online casino games in India — beginner's guide on reddyannasite.live",
     body: [
-      { type: "p", text: "The world of online casino games in India has evolved dramatically over the past few years. What once required visiting a physical casino can now be enjoyed from the comfort of your home. Whether you're interested in online cricket betting, live casino games online, Teen Patti online, or modern games like Aviator, today's platforms offer a seamless experience for both beginners and experienced players." },
+      { type: "p", text: "The world of <a href=\"/games/casino\">online casino games in India</a> has evolved dramatically over the past few years. What once required visiting a physical casino can now be enjoyed from the comfort of your home. Whether you're interested in <a href=\"/games/cricket\">online cricket betting</a>, <a href=\"/games/casino\">live casino games online</a>, <a href=\"/games/teen-patti\">Teen Patti online</a>, or modern games like <a href=\"/games/aviator\">Aviator</a>, today's platforms offer a seamless experience for both beginners and experienced players." },
       { type: "p", text: "As a new player, choosing the right game can feel overwhelming. This guide will walk you through the most popular gaming categories, explain how they work, and help you decide where to start." },
       { type: "h2", text: "Why Online Casino Games Are Growing in India" },
-      { type: "p", text: "Indian players are increasingly turning to online casino games India because of their convenience, variety, and accessibility. With mobile-friendly platforms and fast internet connections, players can enjoy their favorite games anytime and anywhere." },
+      { type: "p", text: "Indian players are increasingly turning to <a href=\"/games/casino\">online casino games India</a> because of their convenience, variety, and accessibility. With mobile-friendly platforms and fast internet connections, players can enjoy their favorite games anytime and anywhere." },
       { type: "p", text: "Some of the key reasons behind this growth include:" },
       { type: "ul", items: [
         "Easy mobile access",
@@ -955,7 +955,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "Fast gameplay",
         "Beginner-friendly interfaces",
       ] },
-      { type: "p", text: "Whether you're looking for casino online games or exploring new online casino games, there is something available for every type of player." },
+      { type: "p", text: "Whether you're looking for <a href=\"/games/casino\">casino online games</a> or exploring <a href=\"/games/casino\">new online casino games</a>, there is something available for every type of player." },
       { type: "h2", text: "Cricket Betting: A Favorite Among Indian Players" },
       { type: "p", text: "Cricket is more than a sport in India — it's a passion. That's why online cricket betting continues to attract millions of users looking to make matches even more exciting." },
       { type: "h3", text: "How Online Cricket Betting Works" },
@@ -980,7 +980,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h3", text: "User Experience Tips for Cricket Betting" },
       { type: "p", text: "The best experience comes from understanding the game before placing any predictions. Following team form, player statistics, and match conditions can help you make more informed decisions. For beginners, starting with simple markets like Match Winner is often easier than exploring advanced betting options." },
       { type: "h2", text: "Casino Games: The Heart of Online Gaming" },
-      { type: "p", text: "The casino section offers some of the most entertaining experiences available online. Whether you're playing for fun or exploring play casino games online for real money, understanding the basics is important." },
+      { type: "p", text: "The casino section offers some of the most entertaining experiences available online. Whether you're playing for fun or exploring <a href=\"/blogblog/best-online-casino-india-real-money\">play casino games online for real money</a>, understanding the basics is important." },
       { type: "h3", text: "Online Slot Games" },
       { type: "p", text: "Slot games are among the easiest and most popular casino games." },
       { type: "p", text: "Why players love slots:" },
@@ -1018,7 +1018,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ] },
       { type: "p", text: "The straightforward gameplay has made baccarat a favorite among casino enthusiasts worldwide." },
       { type: "h2", text: "Live Casino Games: Bringing the Casino Experience Home" },
-      { type: "p", text: "A live casino game online combines traditional casino gaming with modern technology. Instead of playing against software, players interact with real dealers through live video streams." },
+      { type: "p", text: "A <a href=\"/games/casino\">live casino game online</a> combines traditional casino gaming with modern technology. Instead of playing against software, players interact with real dealers through live video streams." },
       { type: "p", text: "Popular live games include:" },
       { type: "ul", items: [
         "Live Blackjack",
@@ -1035,7 +1035,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ] },
       { type: "p", text: "For many beginners, live dealer tables provide a more engaging introduction to online casino games India." },
       { type: "h2", text: "Teen Patti: India's Most Loved Card Game" },
-      { type: "p", text: "No discussion about Indian gaming is complete without Teen Patti online. This classic card game has become one of the most popular forms of entertainment among Indian players." },
+      { type: "p", text: "No discussion about Indian gaming is complete without <a href=\"/games/teen-patti\">Teen Patti online</a>. This classic card game has become one of the most popular forms of entertainment among Indian players." },
       { type: "h3", text: "What Is Teen Patti?" },
       { type: "p", text: "Teen Patti is a three-card game where players compete to build the strongest hand." },
       { type: "p", text: "Common searches include:" },
@@ -1066,7 +1066,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ] },
       { type: "p", text: "Its familiar rules and exciting gameplay continue to attract players across India." },
       { type: "h2", text: "Aviator: The New Generation of Online Gaming" },
-      { type: "p", text: "Among new online casino games, Aviator has quickly gained popularity. Unlike traditional casino games, Aviator follows a crash-game format where players must cash out before the multiplier crashes." },
+      { type: "p", text: "Among <a href=\"/games/casino\">new online casino games</a>, <a href=\"/games/aviator\">Aviator</a> has quickly gained popularity. Unlike traditional casino games, Aviator follows a crash-game format where players must cash out before the multiplier crashes." },
       { type: "h3", text: "How Aviator Works" },
       { type: "ol", items: [
         "Place your stake.",
@@ -1115,7 +1115,20 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "p", text: "Set limits and stick to them. Responsible gaming is an important part of a positive experience." },
       { type: "h2", text: "Final Thoughts" },
       { type: "p", text: "The popularity of online casino games India continues to rise as players discover exciting options like live casino games online, Teen Patti online, online cricket betting, and Aviator. Each game offers a unique experience, whether you enjoy strategy, quick action, or immersive live gameplay." },
-      { type: "p", text: "For beginners, the key is to start with easy-to-understand games, learn the rules, and focus on enjoying the experience. By exploring popular categories such as play casino games online for real money, online casino slot games real money, Teen Patti Gold online, and online cricket betting sites in India, players can find the games that best match their interests and gaming style." }
+      { type: "p", text: "For beginners, the key is to start with easy-to-understand games, learn the rules, and focus on enjoying the experience. By exploring popular categories such as play casino games online for real money, online casino slot games real money, Teen Patti Gold online, and online cricket betting sites in India, players can find the games that best match their interests and gaming style." },
+      { type: "h2", text: "Related Guides & Games" },
+      { type: "p", text: "Explore more helpful guides and start playing your favorite games:" },
+      { type: "ul", items: [
+        "How to Get Cricket ID Online in India - /blogblog/how-to-get-cricket-id-online-india",
+        "IPL 2026 Betting Tips & Strategy - /blogblog/ipl-2026-betting-tips-strategy",
+        "Teen Patti Rules & Strategy - /blogblog/teen-patti-rules-strategy-online",
+        "Aviator Game Tricks & Strategy - /blogblog/aviator-game-tricks-strategy",
+        "Lightning Roulette Strategy - /blogblog/lightning-roulette-strategy-india",
+        "Live Cricket Betting - /games/cricket",
+        "Play Teen Patti Online - /games/teen-patti",
+        "Play Aviator Game - /games/aviator",
+        "Live Casino Games - /games/casino",
+      ] }
     ],
     faqs: [
       { q: "What are the best online casino games for beginners in India?", a: "Slot games, Roulette, Baccarat, Teen Patti, and Aviator are all great starting points as they have simple rules and don't require advanced knowledge." },

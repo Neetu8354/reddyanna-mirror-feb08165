@@ -40,6 +40,17 @@ const TeenPatti = () => (
       "Open the casino lobby, tap Live Casino → Teen Patti and pick a table by stake.",
       "Place your ante, get your 3 cards from the live dealer, and choose to bet, fold or play blind.",
       "Win the hand with the best 3-card combo and instantly withdraw winnings to UPI.",
+    ]},
+    relatedPosts={[
+      { title: "Teen Patti Rules & Strategy", url: "/blogblog/, "/blog/teen-patti-rules-strategy-online" },
+      { title: "Aviator Game Tricks & Strategy", url: "/blogblog/, "/`
+/aviator-game-tricks-strategy" },
+      { title: "How to Get Cricket ID Online in India", url: "/blogblog/, "/
+/how-to-get-cricket-id-online-india" },
+      { title: "Best Online Casino India Real Money", url: "/blogblog/, "/
+/best-online-casino-india-real-money" },
+      { title: "Lightning Roulette Strategy", url: "/blogblog/, "/
+/lightning-roulette-strategy-india" },
     ]}
     faqs={[
       { q: "Can I play Teen Patti for real money on Reddyanaa?", a: "Yes — Teen Patti Royal on reddyannasite.live is real money, with INR stakes from ₹10 up to ₹1,00,000 per hand." },

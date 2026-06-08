@@ -97,6 +97,38 @@ const About = () => {
         </div>
       </section>
 
+      <section className="container py-12">
+        <h2 className="text-2xl font-black md:text-3xl">Popular Guides & Games</h2>
+        <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <a href="/blogblog/, "/
+/how-to-get-cricket-id-online-india" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+            <h3 className="font-semibold text-lg">How to Get Cricket ID Online in India</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Step-by-step guide to get your cricket betting ID via WhatsApp</p>
+          </a>
+          <a href="/games/cricket" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+            <h3 className="font-semibold text-lg">Live Cricket Betting</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Bet on IPL, T20 and international cricket matches</p>
+          </a>
+          <a href="/games/teen-patti" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+            <h3 className="font-semibold text-lg">Teen Patti Online</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Play India's favourite card game with live dealers</p>
+          </a>
+          <a href="/games/aviator" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+            <h3 className="font-semibold text-lg">Aviator Game</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Crash game with multipliers up to 1000x</p>
+          </a>
+          <a href="/games/casino" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+            <h3 className="font-semibold text-lg">Live Casino</h3>
+            <p className="mt-2 text-sm text-muted-foreground">1000+ live casino games with real dealers</p>
+          </a>
+          <a href="/blogblog/, "/
+/best-online-casino-india-real-money" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+            <h3 className="font-semibold text-lg">Best Online Casino India</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Complete guide to online casinos in India</p>
+          </a>
+        </div>
+      </section>
+
       <section className="container pb-20">
         <div className="rounded-3xl border border-primary/40 bg-gradient-card p-8 text-center shadow-glow-gold md:p-12">
           <h2 className="text-3xl font-black md:text-4xl">Ready to join Reddyanaa?</h2>

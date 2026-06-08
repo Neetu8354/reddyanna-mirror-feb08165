@@ -17,10 +17,11 @@ export type GamePageProps = {
   features: { title: string; desc: string }[];
   howToSteps: string[];
   faqs: { q: string; a: string }[];
+  relatedPosts?: { title: string; url: string }[];
 };
 
 export const GamePageLayout = ({
-  slug, name, imgSrc, imgAlt, title, description, keywords, hero, intro, features, howToSteps, faqs,
+  slug, name, imgSrc, imgAlt, title, description, keywords, hero, intro, features, howToSteps, faqs, relatedPosts,
 }: GamePageProps) => {
   useSeo({
     title,
@@ -136,6 +137,23 @@ export const GamePageLayout = ({
         </div>
       </section>
 
+      {relatedPosts && relatedPosts.length > 0 && (
+        <section className="container pb-10">
+          <h2 className="text-2xl font-black md:text-3xl mb-6">Related Guides & Tips</h2>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {relatedPosts.map((post, index) => (
+              <a
+                key={index}
+                href={post.url}
+                className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold"
+              >
+                <h3 className="font-semibold text-lg">{post.title}</h3>
+                <ChevronRight className="mt-2 h-4 w-4 text-primary" />
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
       <section className="container pb-20">
         <div className="rounded-3xl border border-primary/40 bg-gradient-card p-8 text-center shadow-glow-gold md:p-12">
           <h2 className="text-3xl font-black md:text-4xl">Start playing {name} now</h2>
