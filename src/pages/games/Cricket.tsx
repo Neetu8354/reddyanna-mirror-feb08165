@@ -41,13 +41,6 @@ const Cricket = () => (
       "Place your bet at the live odds and track results in real time as the match unfolds.",
       "Withdraw your winnings instantly to UPI — most cashouts land in your bank in under 10 minutes.",
     ]},
-    relatedPosts={[
-      { title: "How to Get Cricket ID Online in India", url: "/blogblog/how-to-get-cricket-id-online-india" },
-      { title: "IPL 2026 Betting Tips & Strategy", url: "/blogblog/ipl-2026-betting-tips-strategy" },
-      { title: "Teen Patti Rules & Strategy", url: "/blogblog/teen-patti-rules-strategy-online" },
-      { title: "Aviator Game Tricks & Strategy", url: "/blogblog/aviator-game-tricks-strategy" },
-      { title: "Best Online Casino India Real Money", url: "/blogblog/best-online-casino-india-real-money" },
-    ]}
     faqs={[
       { q: "Is online cricket betting legal in India?", a: "Reddyanaa operates with licensed gaming partners and serves players in jurisdictions where online cricket betting is permitted. Players must be 18+ and follow local laws." },
       { q: "Can I bet live during IPL matches on Reddyanaa?", a: "Yes — every IPL match has full in-play markets including next ball, next wicket, runs in over, top batsman, match winner and many session markets." },

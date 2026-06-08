@@ -41,13 +41,6 @@ const Aviator = () => (
       "Watch the plane take off — the multiplier rises every second. Tap Cash Out before it flies away.",
       "Win = stake × multiplier at cash-out. Withdraw instantly to UPI.",
     ]},
-    relatedPosts={[
-      { title: "Aviator Game Tricks & Strategy", url: "/blogblog/aviator-game-tricks-strategy" },
-      { title: "Teen Patti Rules & Strategy", url: "/blogblog/teen-patti-rules-strategy-online" },
-      { title: "How to Get Cricket ID Online in India", url: "/blogblog/how-to-get-cricket-id-online-india" },
-      { title: "Best Online Casino India Real Money", url: "/blogblog/best-online-casino-india-real-money" },
-      { title: "Lightning Roulette Strategy", url: "/blogblog/lightning-roulette-strategy-india" },
-    ]}
     faqs={[
       { q: "Is Aviator a real game or a scam?", a: "Aviator is a real, provably fair crash game by Spribe, played by millions worldwide. Reddyanaa runs the official certified version with verifiable RNG." },
       { q: "What is the best Aviator strategy?", a: "Many players use double-bet: one bet auto-cashes at 1.5x for safe profit, the other rides for a higher multiplier. There's no guaranteed strategy — Aviator is a game of chance." },

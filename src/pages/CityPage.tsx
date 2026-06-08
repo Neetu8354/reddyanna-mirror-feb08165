@@ -164,13 +164,11 @@ const CityPage = () => {
       <section className="container py-12">
         <h2 className="text-2xl font-black md:text-3xl">Popular Cricket Betting Guides</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <Link to="/blogblog/, "/
-/how-to-get-cricket-id-online-india" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+          <Link to="/blogblog/how-to-get-cricket-id-online-india" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
             <h3 className="font-semibold text-lg">How to Get Cricket ID Online in India</h3>
             <ChevronRight className="mt-2 h-4 w-4 text-primary" />
           </Link>
-          <Link to="/blogblog/, "/
-/ipl-2026-betting-tips-strategy" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+          <Link to="/blogblog/ipl-2026-betting-tips-strategy" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
             <h3 className="font-semibold text-lg">IPL 2026 Betting Tips & Strategy</h3>
             <ChevronRight className="mt-2 h-4 w-4 text-primary" />
           </Link>
@@ -178,13 +176,11 @@ const CityPage = () => {
             <h3 className="font-semibold text-lg">Live Cricket Betting</h3>
             <ChevronRight className="mt-2 h-4 w-4 text-primary" />
           </Link>
-          <Link to="/blogblog/, "/
-/teen-patti-rules-strategy-online" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+          <Link to="/blogblog/teen-patti-rules-strategy-online" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
             <h3 className="font-semibold text-lg">Teen Patti Rules & Strategy</h3>
             <ChevronRight className="mt-2 h-4 w-4 text-primary" />
           </Link>
-          <Link to="/blogblog/, "/
-/aviator-game-tricks-strategy" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
+          <Link to="/blogblog/aviator-game-tricks-strategy" className="rounded-xl border border-primary/20 bg-gradient-card p-4 transition-all hover:border-primary/40 hover:shadow-glow-gold">
             <h3 className="font-semibold text-lg">Aviator Game Tricks & Strategy</h3>
             <ChevronRight className="mt-2 h-4 w-4 text-primary" />
           </Link>
