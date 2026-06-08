@@ -42,15 +42,11 @@ const TeenPatti = () => (
       "Win the hand with the best 3-card combo and instantly withdraw winnings to UPI.",
     ]},
     relatedPosts={[
-      { title: "Teen Patti Rules & Strategy", url: "/blogblog/, "/blog/teen-patti-rules-strategy-online" },
-      { title: "Aviator Game Tricks & Strategy", url: "/blogblog/, "/`
-/aviator-game-tricks-strategy" },
-      { title: "How to Get Cricket ID Online in India", url: "/blogblog/, "/
-/how-to-get-cricket-id-online-india" },
-      { title: "Best Online Casino India Real Money", url: "/blogblog/, "/
-/best-online-casino-india-real-money" },
-      { title: "Lightning Roulette Strategy", url: "/blogblog/, "/
-/lightning-roulette-strategy-india" },
+      { title: "Teen Patti Rules & Strategy", url: "/blogblog/teen-patti-rules-strategy-online" },
+      { title: "Aviator Game Tricks & Strategy", url: "/blogblog/aviator-game-tricks-strategy" },
+      { title: "How to Get Cricket ID Online in India", url: "/blogblog/how-to-get-cricket-id-online-india" },
+      { title: "Best Online Casino India Real Money", url: "/blogblog/best-online-casino-india-real-money" },
+      { title: "Lightning Roulette Strategy", url: "/blogblog/lightning-roulette-strategy-india" },
     ]}
     faqs={[
       { q: "Can I play Teen Patti for real money on Reddyanaa?", a: "Yes — Teen Patti Royal on reddyannasite.live is real money, with INR stakes from ₹10 up to ₹1,00,000 per hand." },

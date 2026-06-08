@@ -41,16 +41,11 @@ const Casino = () => (
       "Cash out winnings to UPI in under 10 minutes — straight to your bank.",
     ]},
     relatedPosts={[
-      { title: "Best Online Casino India Real Money", url: "/blogblog/, "/
-/best-online-casino-india-real-money" },
-      { title: "Lightning Roulette Strategy", url: "/blogblog/, "/
-/lightning-roulette-strategy-india" },
-      { title: "Teen Patti Rules & Strategy", url: "/blogblog/, "/
-/teen-patti-rules-strategy-online" },
-      { title: "Aviator Game Tricks & Strategy", url: "/blogblog/, "/
-/aviator-game-tricks-strategy" },
-      { title: "How to Get Cricket ID Online in India", url: "/blogblog/, "/
-/how-to-get-cricket-id-online-india" },
+      { title: "Best Online Casino India Real Money", url: "/blogblog/best-online-casino-india-real-money" },
+      { title: "Lightning Roulette Strategy", url: "/blogblog/lightning-roulette-strategy-india" },
+      { title: "Teen Patti Rules & Strategy", url: "/blogblog/teen-patti-rules-strategy-online" },
+      { title: "Aviator Game Tricks & Strategy", url: "/blogblog/aviator-game-tricks-strategy" },
+      { title: "How to Get Cricket ID Online in India", url: "/blogblog/how-to-get-cricket-id-online-india" },
     ]}
     faqs={[
       { q: "Is the live casino on Reddyanaa real?", a: "Yes. All live tables stream from licensed studios with real human dealers, real cards and real wheels — no animations." },
