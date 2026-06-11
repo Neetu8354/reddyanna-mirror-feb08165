@@ -27,7 +27,7 @@ const TeenPatti = () => (
           Teen Patti is played using a standard 52-card deck without jokers. Each player receives three cards, and the objective is to have the strongest hand or use strategy to outplay opponents. Every round involves decision-making, observation, and calculated risks, making every game exciting and unpredictable.
         </p>
         <p className="mt-4">
-          At Reddy Anna Site, players can explore everything they need to know about Andar Bahar, including game rules, card values, gameplay mechanics, winning strategies, and beginner-friendly guides. The game's straightforward structure makes it accessible to new players, while its unpredictability and decision-making elements keep experienced players engaged.
+          At Reddy Anna Site, players can explore everything they need to know about <a href="/games/andar-bahar" className="text-primary underline hover:text-primary/80">Andar Bahar, including game rules</a>, card values, gameplay mechanics, winning strategies, and beginner-friendly guides. The game's straightforward structure makes it accessible to new players, while its unpredictability and decision-making elements keep experienced players engaged.
         </p>
         <p className="mt-4">
           Andar Bahar is played using a standard deck of cards and revolves around predicting which side — Andar or Bahar — will receive a card matching the value of the Joker card selected at the beginning of the round. Every game is quick, easy to follow, and filled with anticipation, making Andar Bahar one of the most popular traditional Indian card games.
