@@ -1,23 +1,41 @@
 import { PageShell } from "@/components/PageShell";
 import { useSeo, breadcrumbLd, SITE_URL } from "@/lib/seo";
 import { WHATSAPP_LINK } from "@/lib/links";
-import { Shield, Trophy, Zap, Users, Heart, Award } from "lucide-react";
+import { Shield, Trophy, Zap, Users, Heart, Award, ChevronDown } from "lucide-react";
 
 const values = [
-  { icon: Shield, title: "Player-first security", desc: "TLS encryption, certified RNGs and segregated funds keep every rupee safe on reddyannasite.live." },
-  { icon: Zap, title: "Lightning-fast payouts", desc: "10-minute UPI withdrawals — no hidden delays, no manual reviews for verified players." },
-  { icon: Trophy, title: "Built for cricket India", desc: "Live IPL, T20 and international markets curated for Indian players, in INR." },
-  { icon: Users, title: "Real human support", desc: "24/7 WhatsApp support — talk to a real person, never a bot." },
-  { icon: Heart, title: "Responsible gaming", desc: "Self-exclusion, deposit limits and reality checks built into every account." },
-  { icon: Award, title: "Licensed & audited", desc: "Independently audited operations and licensed gaming partners only." },
+  { icon: Shield, title: "Trusted Platform", desc: "We strive to create a secure and reliable environment where users can enjoy their favorite sports and casino games with confidence." },
+  { icon: Zap, title: "Fast Registration Process", desc: "Getting started is simple and hassle-free, allowing users to access gaming services quickly." },
+  { icon: Trophy, title: "User-Friendly Interface", desc: "Our website is optimized for mobile, tablet, and desktop devices, ensuring smooth navigation across all platforms." },
+  { icon: Users, title: "Dedicated Customer Support", desc: "Our support team is available to assist users with account-related queries and platform guidance whenever needed." },
+  { icon: Heart, title: "Wide Range of Gaming Options", desc: "From cricket betting and live sports to casino games and card games, users can explore multiple entertainment options from a single platform." },
+  { icon: Award, title: "Our Commitment", desc: "We are committed to providing a safe, transparent, and enjoyable gaming experience with continuous platform improvements." },
+];
+
+const faqs = [
+  { q: "What is Reddy Anna Site?", a: "Reddy Anna Site is an online platform that provides access to cricket betting, sports betting, live casino games, Teen Patti, Aviator, and other popular gaming options for users across India." },
+  { q: "How can I get a Cricket Betting ID?", a: "You can request a Cricket Betting ID through the registration process on Reddy Anna Site. Once your details are verified, your ID can be activated quickly." },
+  { q: "Is Reddy Anna Site suitable for live cricket betting?", a: "Yes, Reddy Anna Site offers access to live cricket betting markets with real-time odds, match updates, and betting opportunities for major tournaments and leagues." },
+  { q: "What sports are available for betting?", a: "Users can explore betting markets for cricket, football, tennis, basketball, kabaddi, and various other sports events throughout the year." },
+  { q: "What casino games are available on Reddy Anna Site?", a: "The platform provides access to live casino games, Teen Patti, Aviator, Andar Bahar, Dragon Tiger, Roulette, Blackjack, and other popular gaming options." },
+  { q: "Can I access Reddy Anna Site on my mobile device?", a: "Yes, the platform is optimized for smartphones, tablets, and desktop devices, allowing users to enjoy a seamless experience across multiple devices." },
+  { q: "How do I register on Reddy Anna Site?", a: "Simply visit the registration page, submit the required details, and follow the instructions provided to create your account." },
+  { q: "Does Reddy Anna Site provide customer support?", a: "Yes, dedicated customer support is available to assist users with account-related queries, registration assistance, and general platform guidance." },
+  { q: "What makes Reddy Anna Site different from other gaming platforms?", a: "Reddy Anna Site focuses on providing a user-friendly experience, multiple gaming options, fast account access, responsive customer support, and a secure platform environment." },
+  { q: "Can beginners use Reddy Anna Site?", a: "Yes, both beginners and experienced users can navigate the platform easily. The simple interface and various gaming options make it accessible to all types of users." },
+  { q: "Does Reddy Anna Site offer IPL betting opportunities?", a: "Yes, users can access betting markets for major cricket tournaments, including the Indian Premier League (IPL), international matches, and domestic cricket events." },
+  { q: "What is the Aviator Game on Reddy Anna Site?", a: "Aviator is a popular online game where players make decisions based on a multiplier that increases over time, creating an exciting and fast-paced gaming experience." },
+  { q: "Is account registration quick and easy?", a: "Yes, the registration process is designed to be straightforward, allowing users to get started with minimal steps." },
+  { q: "Can I explore both sports betting and casino games with one account?", a: "Yes, users can access a variety of sports betting and casino gaming options through a single account." },
+  { q: "Why do users choose Reddy Anna Site?", a: "Users choose Reddy Anna Site for its wide selection of games, live sports betting options, easy navigation, reliable support, and overall gaming experience." },
 ];
 
 const About = () => {
   useSeo({
-    title: "About Reddyanaa | India's Trusted Cricket Betting & Casino Brand",
-    description: "Learn about Reddyanaa — India's #1 cricket betting and live casino platform. Licensed, secure, 10-min UPI payouts and 24/7 WhatsApp support on reddyannasite.live.",
+    title: "About Reddy Anna Site | India's Leading Gaming & Betting Platform",
+    description: "Welcome to Reddy Anna Site — one of India's leading platforms for online cricket betting, sports betting, casino gaming, and live gaming entertainment. Secure, fast, and user-friendly.",
     path: "/about",
-    keywords: "about reddyanaa, reddyanna online, cricket betting site India, trusted online casino India, reddyanna company",
+    keywords: "about reddy anna site, reddyanna online, cricket betting site India, sports betting India, online casino India, live gaming platform",
     ogImage: `${SITE_URL}/android-chrome-512x512.png`,
     jsonLd: [
       breadcrumbLd([
@@ -27,11 +45,11 @@ const About = () => {
       {
         "@context": "https://schema.org",
         "@type": "AboutPage",
-        name: "About Reddyanaa",
+        name: "About Reddy Anna Site",
         url: `${SITE_URL}/about`,
         about: {
           "@type": "Organization",
-          name: "Reddyanaa",
+          name: "Reddy Anna Site",
           url: SITE_URL,
           sameAs: ["https://wa.link/reddyanna_"],
         },
@@ -43,12 +61,14 @@ const About = () => {
     <PageShell crumbs={[{ name: "Home", path: "/" }, { name: "About", path: "/about" }]}>
       <section className="container py-12 md:py-20">
         <p className="text-xs font-bold uppercase tracking-widest text-primary md:text-sm">About Us</p>
-        <h1 className="mt-2 max-w-3xl text-4xl font-black leading-tight md:text-5xl">
-          About <span className="text-gradient-gold">Reddyanaa</span> — India's most trusted cricket betting & live casino platform
+        <h1 className="mt-2 max-w-4xl text-4xl font-black leading-tight md:text-5xl">
+          About <span className="text-gradient-gold">Reddy Anna Site</span>
         </h1>
-        <p className="mt-5 max-w-2xl text-muted-foreground md:text-lg">
-          Reddyanaa.online was built for one mission: give Indian cricket fans a safe, fast and fair place to bet on the sport they love and play the casino classics they grew up with.
-          From IPL and T20 World Cup markets to Teen Patti, Andar Bahar, Aviator and live roulette — every game on Reddyanaa is curated, audited and tuned for Indian players.
+        <p className="mt-5 max-w-3xl text-muted-foreground md:text-lg">
+          Welcome to Reddy Anna Site, one of India's leading platforms for online cricket betting, sports betting, casino gaming, and live gaming entertainment. Our mission is to provide users with a secure, user-friendly, and engaging platform where sports enthusiasts and gaming fans can enjoy a premium online experience.
+        </p>
+        <p className="mt-4 max-w-3xl text-muted-foreground md:text-lg">
+          Since our inception, we have focused on delivering a seamless environment that combines advanced technology, reliable services, and dedicated customer support. Whether you are interested in live cricket betting, football betting, casino games, Teen Patti, Aviator, or other popular online games, Reddy Anna Site offers everything in one convenient platform.
         </p>
 
         <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4">
@@ -68,22 +88,47 @@ const About = () => {
 
       <section className="bg-secondary/40 py-16 md:py-24">
         <div className="container">
-          <h2 className="text-3xl font-black md:text-4xl">Our story</h2>
-          <div className="mt-5 grid gap-6 text-muted-foreground md:grid-cols-2 md:text-lg">
+          <h2 className="text-3xl font-black md:text-4xl">Our Vision</h2>
+          <div className="mt-5 max-w-3xl text-muted-foreground md:text-lg">
             <p>
-              Reddyanaa started with a simple frustration: Indian players deserved better than slow withdrawals, confusing bonuses and clunky interfaces.
-              We built reddyannasite.live from the ground up around UPI-first payments, INR wallets, real human support on WhatsApp, and live cricket markets that update in real time.
-            </p>
-            <p>
-              Today Reddyanaa is one of India's fastest-growing real-money gaming brands — trusted by over a lakh active players across Mumbai, Delhi, Bangalore, Hyderabad, Chennai and beyond.
-              Every game is provably fair, every payout is processed in minutes, and every player gets the same VIP-grade support.
+              Our vision is to become India's most trusted destination for online gaming and sports entertainment by providing innovative features, secure transactions, and exceptional customer service. We continuously improve our platform to meet the evolving needs of our users while maintaining transparency and reliability.
             </p>
           </div>
         </div>
       </section>
 
       <section className="container py-16 md:py-24">
-        <h2 className="text-3xl font-black md:text-4xl">What we stand for</h2>
+        <h2 className="text-3xl font-black md:text-4xl">What We Offer</h2>
+        <p className="mt-4 max-w-3xl text-muted-foreground md:text-lg">
+          At Reddy Anna Site, users can access a wide range of gaming and betting opportunities, including:
+        </p>
+        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            "Live Cricket Betting",
+            "IPL Betting Markets",
+            "Football Betting",
+            "Tennis Betting",
+            "Online Casino Games",
+            "Live Casino Tables",
+            "Teen Patti Online",
+            "Aviator Game",
+            "Andar Bahar",
+            "Dragon Tiger",
+            "Instant Cricket ID Services",
+          ].map((item) => (
+            <div key={item} className="flex items-center gap-3 rounded-xl border border-border bg-card/60 p-4">
+              <div className="h-2 w-2 rounded-full bg-primary"></div>
+              <span className="font-medium">{item}</span>
+            </div>
+          ))}
+        </div>
+        <p className="mt-6 max-w-3xl text-muted-foreground md:text-lg">
+          Our platform is designed to provide fast access, smooth gameplay, and real-time updates to enhance the overall user experience.
+        </p>
+      </section>
+
+      <section className="container py-16 md:py-24">
+        <h2 className="text-3xl font-black md:text-4xl">Why Choose Reddy Anna Site?</h2>
         <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((v) => (
             <article key={v.title} className="rounded-2xl border border-border bg-gradient-card p-6 shadow-card">
@@ -93,6 +138,33 @@ const About = () => {
               <h3 className="text-lg font-bold">{v.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{v.desc}</p>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-secondary/40 py-16 md:py-24">
+        <div className="container max-w-4xl">
+          <h2 className="text-3xl font-black md:text-4xl">Join the Reddy Anna Community</h2>
+          <p className="mt-4 text-muted-foreground md:text-lg">
+            Thousands of users choose Reddy Anna Site for sports betting and online gaming entertainment. Whether you are following your favorite cricket match, exploring live casino games, or enjoying popular card games, our platform is designed to deliver an exciting and convenient experience.
+          </p>
+          <p className="mt-4 text-muted-foreground md:text-lg">
+            Explore the world of online gaming with Reddy Anna Site and discover why we continue to be a preferred choice for users across India.
+          </p>
+        </div>
+      </section>
+
+      <section className="container py-16 md:py-24">
+        <h2 className="text-3xl font-black md:text-4xl">Frequently Asked Questions (FAQs)</h2>
+        <div className="mt-8 max-w-3xl space-y-3">
+          {faqs.map((faq) => (
+            <details key={faq.q} className="group rounded-2xl border border-border bg-card p-5 shadow-card">
+              <summary className="flex cursor-pointer items-center justify-between text-base font-bold">
+                {faq.q}
+                <ChevronDown className="h-5 w-5 transition-transform group-open:rotate-180" />
+              </summary>
+              <p className="mt-3 text-sm text-muted-foreground">{faq.a}</p>
+            </details>
           ))}
         </div>
       </section>
