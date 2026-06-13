@@ -46,18 +46,46 @@ const Index = () => {
     addLd({
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "Reddyanaa",
-      alternateName: ["Reddyanna", "Reddy Anna"],
+      "@id": "https://www.reddyannasite.live/#organization",
+      name: "ReddyAnnaSite",
+      alternateName: [
+        "Reddy Anna Site",
+        "Reddy Anna",
+        "ReddyAnna"
+      ],
       url: "https://www.reddyannasite.live/",
-      logo: "https://www.reddyannasite.live/android-chrome-512x512.png",
-      description: "Join Reddy Anna and experience online cricket betting, live casino games, Teen Patti, Aviator, and sports betting on a single platform. Get fast UPI deposits and withdrawals, competitive odds, live match markets, and a smooth mobile betting experience.",
-      sameAs: ["https://wa.link/reddyanna_"],
-      contactPoint: [{
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.reddyannasite.live/android-chrome-512x512.png",
+        width: 512,
+        height: 512
+      },
+      image: "https://www.reddyannasite.live/android-chrome-512x512.png",
+      description: "ReddyAnnaSite is a trusted online gaming and betting platform offering cricket betting, sports betting, live casino games, Teen Patti, Aviator, and other popular online games. Users can enjoy fast registration, competitive odds, secure transactions, and 24/7 customer support.",
+      sameAs: [
+        "https://wa.link/reddyanna_"
+      ],
+      contactPoint: {
         "@type": "ContactPoint",
-        contactType: "customer support",
-        availableLanguage: ["English", "Hindi"],
+        contactType: "Customer Support",
         url: "https://wa.link/reddyanna_",
-      }],
+        availableLanguage: [
+          "English",
+          "Hindi"
+        ]
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "India"
+      },
+      knowsAbout: [
+        "Cricket Betting",
+        "Sports Betting",
+        "Live Casino",
+        "Teen Patti",
+        "Aviator Game",
+        "Online Gaming"
+      ]
     });
 
     addLd({
