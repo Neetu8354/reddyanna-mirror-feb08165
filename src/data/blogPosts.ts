@@ -1,4 +1,5 @@
 import blogCasinoGamesImg from "@/assets/blog-casino-games-india.png";
+import blogCricketBettingImg from "@/assets/Screenshot 2026-06-16 131037.png";
 
 export type BlogPost = {
   slug: string;
@@ -1153,7 +1154,7 @@ export const BLOG_POSTS: BlogPost[] = [
     datePublished: "2026-06-16",
     dateModified: "2026-06-16",
     readMinutes: 10,
-    cover: COVER_DEFAULT,
+    cover: blogCricketBettingImg,
     coverAlt: "Best online cricket betting strategies for T20, ODI, and Test matches on Reddy Anna Site",
     body: [
       { type: "p", text: "Cricket is one of the most followed sports in India, and the popularity of <a href=\"/\">online cricket betting</a> continues to grow among cricket enthusiasts. With multiple formats such as T20, ODI, and Test cricket, each match type requires a different approach and understanding. Whether you are new to cricket bet online platforms or looking to improve your knowledge of online betting cricket, understanding format-specific strategies can help you make more informed decisions." },
