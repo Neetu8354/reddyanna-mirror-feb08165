@@ -55,20 +55,33 @@ const BlogPost = () => {
       ]),
       {
         "@context": "https://schema.org",
-        "@type": "BlogPosting",
+        "@type": "Article",
         headline: post.title,
         description: post.description,
-        image: [post.cover],
+        image: post.cover,
         datePublished: post.datePublished,
         dateModified: post.dateModified,
-        author: { "@type": "Organization", name: post.author, url: SITE_URL },
+        author: { "@type": "Organization", name: post.author },
         publisher: {
           "@type": "Organization",
-          name: "Reddyanaa",
-          logo: { "@type": "ImageObject", url: `${SITE_URL}/android-chrome-512x512.png` },
+          name: "Reddy Anna Site",
+          logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": url },
-        keywords: post.keywords,
+        articleSection: post.category,
+        keywords: post.keywords.split(", "),
+        about: { "@type": "Thing", name: post.category },
+        inLanguage: "en-IN",
+        wordCount: post.body.reduce((acc, block) => {
+          if (block.type === "p" || block.type === "h2" || block.type === "h3" || block.type === "quote") {
+            return acc + block.text.split(/\s+/).length;
+          }
+          if (block.type === "ul" || block.type === "ol") {
+            return acc + block.items.join(" ").split(/\s+/).length;
+          }
+          return acc;
+        }, 0),
+        isAccessibleForFree: true,
       },
       ...(post.faqs && post.faqs.length
         ? [{
