@@ -25,7 +25,7 @@ export type BlogBlock =
   | { type: "ol"; items: string[] }
   | { type: "quote"; text: string };
 
-import blogCasinoGamesWoman from "@/assets/blog-casino-games-woman.jpg";
+import blogCasinoGamesIndia from "@/assets/blog-casino-games-india.png";
 
 export const BLOG_POSTS: BlogPost[] = [
   {
@@ -43,7 +43,7 @@ export const BLOG_POSTS: BlogPost[] = [
     datePublished: "2026-06-23",
     dateModified: "2026-06-23",
     readMinutes: 12,
-    cover: blogCasinoGamesWoman,
+    cover: blogCasinoGamesIndia,
     coverAlt: "Best online casino games in India for beginners - Reddyannasite guide",
     body: [
       { type: "p", text: "The world of <a href=\"/games/casino\">online casino games in India</a> has evolved dramatically over the past few years. What once required visiting a physical casino can now be enjoyed from the comfort of your home. Whether you're interested in <a href=\"/games/cricket\">online cricket betting</a>, live casino games online, Teen Patti online, or modern games like Aviator, today's platforms offer a seamless experience for both beginners and experienced players." },
