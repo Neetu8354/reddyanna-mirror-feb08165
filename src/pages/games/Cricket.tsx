@@ -55,6 +55,18 @@ const Cricket = () => (
       { q: "What is the minimum cricket bet amount?", a: "The minimum bet starts as low as ₹10 on most cricket markets, making it accessible for beginners to start safely while learning live betting." },
       { q: "Do I get a welcome bonus for cricket betting?", a: "Yes — new players receive a 200% welcome bonus up to ₹20,000 on their first deposit, plus weekly cashback on losing cricket bets." },
     ]}
+    cityLinks={[
+      { label: "Cricket ID Mumbai", to: "/cricket-id/mumbai" },
+      { label: "Cricket ID Delhi", to: "/cricket-id/delhi" },
+      { label: "Cricket ID Bangalore", to: "/cricket-id/bangalore" },
+      { label: "Cricket ID Hyderabad", to: "/cricket-id/hyderabad" },
+      { label: "Cricket ID Kolkata", to: "/cricket-id/kolkata" },
+      { label: "Cricket ID Chennai", to: "/cricket-id/chennai" },
+      { label: "Cricket ID Pune", to: "/cricket-id/pune" },
+      { label: "Cricket ID Ahmedabad", to: "/cricket-id/ahmedabad" },
+      { label: "Cricket ID Jaipur", to: "/cricket-id/jaipur" },
+      { label: "Cricket ID Lucknow", to: "/cricket-id/lucknow" },
+    ]}
   />
 );
 

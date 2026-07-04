@@ -3,6 +3,7 @@ import { PageShell } from "@/components/PageShell";
 import { useSeo, breadcrumbLd, SITE_URL } from "@/lib/seo";
 import { WHATSAPP_LINK } from "@/lib/links";
 import { ChevronRight, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export type GamePageProps = {
   slug: string;
@@ -18,10 +19,11 @@ export type GamePageProps = {
   howToSteps: string[];
   faqs: { q: string; a: string }[];
   relatedPosts?: { title: string; url: string }[];
+  cityLinks?: { label: string; to: string }[];
 };
 
 export const GamePageLayout = ({
-  slug, name, imgSrc, imgAlt, title, description, keywords, hero, intro, features, howToSteps, faqs, relatedPosts,
+  slug, name, imgSrc, imgAlt, title, description, keywords, hero, intro, features, howToSteps, faqs, relatedPosts, cityLinks,
 }: GamePageProps) => {
   useSeo({
     title,
@@ -150,6 +152,19 @@ export const GamePageLayout = ({
                 <h3 className="font-semibold text-lg">{post.title}</h3>
                 <ChevronRight className="mt-2 h-4 w-4 text-primary" />
               </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {cityLinks && cityLinks.length > 0 && (
+        <section className="container py-12">
+          <h2 className="text-2xl font-black md:text-3xl">Cricket ID by City</h2>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {cityLinks.map((link) => (
+              <Link key={link.to} to={link.to} className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold hover:border-primary hover:text-primary">
+                {link.label}
+              </Link>
             ))}
           </div>
         </section>
