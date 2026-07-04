@@ -20,6 +20,11 @@ const cities: { label: string; to: string }[] = [
   { label: "Cricket ID Bangalore", to: "/cricket-id/bangalore" },
   { label: "Cricket ID Hyderabad", to: "/cricket-id/hyderabad" },
   { label: "Cricket ID Kolkata", to: "/cricket-id/kolkata" },
+  { label: "Cricket ID Chennai", to: "/cricket-id/chennai" },
+  { label: "Cricket ID Pune", to: "/cricket-id/pune" },
+  { label: "Cricket ID Ahmedabad", to: "/cricket-id/ahmedabad" },
+  { label: "Cricket ID Jaipur", to: "/cricket-id/jaipur" },
+  { label: "Cricket ID Lucknow", to: "/cricket-id/lucknow" },
 ];
 
 export const Footer = () => (
