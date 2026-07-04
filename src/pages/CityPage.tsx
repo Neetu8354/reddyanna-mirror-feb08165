@@ -13,11 +13,11 @@ const CityPage = () => {
   if (!city) return <Navigate to="/404" replace />;
 
   const path = `/cricket-id/${city.slug}`;
-  const title = `Cricket ID in ${city.city} | Online Betting ID via WhatsApp | Reddyanaa`;
-  const description = `Get your online cricket ID in ${city.city} in 2 minutes. ${city.iplTeam ? city.iplTeam + " markets, " : ""}live IPL odds, instant UPI payouts to all ${city.state} banks. 200% welcome bonus.`;
+  const title = city.customTitle || `Cricket ID in ${city.city} | Online Betting ID via WhatsApp | Reddyanaa`;
+  const description = city.customDescription || `Get your online cricket ID in ${city.city} in 2 minutes. ${city.iplTeam ? city.iplTeam + " markets, " : ""}live IPL odds, instant UPI payouts to all ${city.state} banks. 200% welcome bonus.`;
   const keywords = `cricket id ${city.city.toLowerCase()}, online betting id ${city.city.toLowerCase()}, ipl betting ${city.city.toLowerCase()}, ${city.city.toLowerCase()} cricket id whatsapp, betting site ${city.state.toLowerCase()}`;
 
-  const faqs = [
+  const faqs = city.customContent?.faqs || [
     { q: `How do I get a cricket ID in ${city.city}?`, a: `Tap the WhatsApp button on reddyannasite.live, send 'Hi', share your name and pay ₹100 via UPI. Your ${city.city} cricket ID is ready in under 2 minutes.` },
     { q: `Which banks work for UPI deposits in ${city.city}?`, a: city.upiNote },
     { q: `Is online cricket betting legal in ${city.city}?`, a: `Reddyanaa operates via licensed offshore exchanges that legally accept Indian players. ${city.city} players must be 18+ and follow ${city.state} state laws.` },
@@ -97,14 +97,33 @@ const CityPage = () => {
 
       <section className="container py-12 md:py-16">
         <div className="prose prose-invert max-w-3xl text-muted-foreground md:text-lg">
-          <p>
-            Reddyanaa is the most trusted <strong>online cricket ID provider in {city.city}</strong>, serving over 12,000 active players across {city.state}. Whether you're in the heart of the city or the suburbs, you can sign up on WhatsApp, deposit via UPI to any {city.state} bank, and start betting on live IPL{city.iplTeam ? `, ${city.iplTeam}` : ""}, T20 World Cup, Teen Patti and live casino in under two minutes.
-          </p>
-          <p className="mt-4">
-            Every {city.city} cricket ID comes with a 200% welcome bonus up to ₹20,000, 24×7 Hindi & English WhatsApp support, and the fastest UPI withdrawals in the city — most cashouts land in under 10 minutes.
-          </p>
+          {city.customContent?.intro ? (
+            <p>{city.customContent.intro}</p>
+          ) : (
+            <>
+              <p>
+                Reddyanaa is the most trusted <strong>online cricket ID provider in {city.city}</strong>, serving over 12,000 active players across {city.state}. Whether you're in the heart of the city or the suburbs, you can sign up on WhatsApp, deposit via UPI to any {city.state} bank, and start betting on live IPL{city.iplTeam ? `, ${city.iplTeam}` : ""}, T20 World Cup, Teen Patti and live casino in under two minutes.
+              </p>
+              <p className="mt-4">
+                Every {city.city} cricket ID comes with a 200% welcome bonus up to ₹20,000, 24×7 Hindi & English WhatsApp support, and the fastest UPI withdrawals in the city — most cashouts land in under 10 minutes.
+              </p>
+            </>
+          )}
         </div>
       </section>
+
+      {city.customContent?.sections && city.customContent.sections.length > 0 && (
+        <section className="container py-12 md:py-16">
+          <div className="prose prose-invert max-w-3xl text-muted-foreground md:text-lg">
+            {city.customContent.sections.map((section, index) => (
+              <div key={index} className="mb-8">
+                <h3 className="text-2xl font-bold text-foreground mb-4">{section.title}</h3>
+                <p className="text-muted-foreground whitespace-pre-line">{section.content}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="bg-secondary/40 py-16 md:py-24">
         <div className="container">
