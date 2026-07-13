@@ -26,7 +26,6 @@ export type BlogBlock =
   | { type: "quote"; text: string };
 
 import blogCasinoGamesIndia from "@/assets/blog-casino-games-india.png";
-import blogTeenPattiMistakes from "@/assets/blog-teen-patti-mistakes.png";
 
 export const BLOG_POSTS: BlogPost[] = [
   {
@@ -41,7 +40,7 @@ export const BLOG_POSTS: BlogPost[] = [
     datePublished: "2026-07-13",
     dateModified: "2026-07-13",
     readMinutes: 8,
-    cover: blogTeenPattiMistakes,
+    cover: blogCasinoGamesIndia,
     coverAlt: "5 mistakes to avoid in online Teen Patti real money games",
     body: [
       { type: "p", text: "Online Teen Patti real money games have made the classic three-card experience more accessible to players who enjoy fast-paced gameplay, competitive tables, and digital entertainment. With an online platform, users can explore Teen Patti games from their preferred device without needing to organise a physical card session." },
