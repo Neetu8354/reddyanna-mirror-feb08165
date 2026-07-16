@@ -72,7 +72,7 @@ export const GamePageLayout = ({
       { name, path: `/games/${slug}` },
     ]}>
       <section className="relative overflow-hidden">
-        <img src={imgSrc} alt={imgAlt} width={1920} height={1088} fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={imgSrc} alt={imgAlt} title={imgAlt} width={1920} height={1088} fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-background/40" />
         <div className="container relative z-10 py-16 md:py-24">

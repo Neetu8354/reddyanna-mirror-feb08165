@@ -6,7 +6,7 @@ import { ChevronRight, Shield, Trophy, Zap, Star } from "lucide-react";
 export const Hero = () => {
   return (
     <section id="top" className="relative overflow-hidden">
-      <img src={heroBg} alt="Cricket betting and live casino platform background" width={1920} height={1088} fetchPriority="high" className="absolute inset-0 h-full w-full object-cover" />
+      <img src={heroBg} alt="Cricket betting and live casino platform background" title="Cricket betting and live casino platform background" width={1920} height={1088} fetchPriority="high" className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/60" />
 

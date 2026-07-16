@@ -23,7 +23,7 @@ export const PromoSlider = () => {
         <div className="relative aspect-[21/9] md:aspect-[21/8]">
           {slides.map((s, idx) => (
             <div key={idx} className={`absolute inset-0 transition-opacity duration-700 ${idx === i ? "opacity-100" : "opacity-0"}`}>
-              <img src={s.img} alt={`${s.title} - ${s.eyebrow} promotion at Reddy Anna`} width={1920} height={768} loading={idx === 0 ? "eager" : "lazy"} decoding="async" className="h-full w-full object-cover" />
+              <img src={s.img} alt={`${s.title} - ${s.eyebrow} promotion at Reddy Anna`} title={`${s.title} - ${s.eyebrow} promotion at Reddy Anna`} width={1920} height={768} loading={idx === 0 ? "eager" : "lazy"} decoding="async" className="h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent" />
               <div className="absolute inset-0 flex items-center">
                 <div className="container max-w-2xl">

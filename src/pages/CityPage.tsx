@@ -70,7 +70,7 @@ const CityPage = () => {
       { name: city.city, path },
     ]}>
       <section className="relative overflow-hidden">
-        <img src={cricketIpl} alt={`Online cricket ID in ${city.city} — IPL betting on Reddyanaa`} width={1920} height={1088} fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={cricketIpl} alt={`Online cricket ID in ${city.city} — IPL betting on Reddyanaa`} title={`Online cricket ID in ${city.city} — IPL betting on Reddyanaa`} width={1920} height={1088} fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-background/40" />
         <div className="container relative z-10 py-16 md:py-24">

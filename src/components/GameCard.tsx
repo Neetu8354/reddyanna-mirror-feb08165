@@ -43,7 +43,7 @@ export const GameCard = ({ game }: { game: Game }) => {
     className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-gradient-card shadow-card transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-glow-gold"
   >
     <div className="relative aspect-[4/3] overflow-hidden">
-      <img src={game.img} alt={`${game.title} - ${game.category} game at Reddy Anna`} width={1024} height={768} loading="lazy" decoding="async" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <img src={game.img} alt={`${game.title} - ${game.category} game at Reddy Anna`} title={`${game.title} - ${game.category} game at Reddy Anna`} width={1024} height={768} loading="lazy" decoding="async" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
       <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
         {game.badges.map((b) => (
           <span key={b} className={`rounded-full border px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider backdrop-blur ${badgeStyles[b]}`}>{b}</span>

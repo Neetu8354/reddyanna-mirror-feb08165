@@ -17,7 +17,7 @@ export const Promotions = () => (
     </div>
 
     <div className="relative mb-6 overflow-hidden rounded-3xl border border-primary/30 shadow-glow-gold">
-      <img src={promoBonus} alt="200% welcome bonus promotion at Reddy Anna" width={1920} height={768} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+      <img src={promoBonus} alt="200% welcome bonus promotion at Reddy Anna" title="200% welcome bonus promotion at Reddy Anna" width={1920} height={768} loading="lazy" decoding="async" className="h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
       <div className="absolute inset-0 flex items-center">
         <div className="container max-w-xl">

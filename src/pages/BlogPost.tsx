@@ -119,6 +119,7 @@ const BlogPost = () => {
         <img
           src={post.cover}
           alt={post.coverAlt}
+          title={post.coverAlt}
           width={1200}
           height={675}
           fetchPriority="high"
